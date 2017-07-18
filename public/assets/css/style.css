@@ -1,8 +1,7 @@
 .div-img {
-  width: 100%;
-  height: 60vh; }
+  height: 400px !important; }
   .div-img__hija {
-    width: 100%; }
+    width: 300px; }
   .div-img__mg-tp {
     margin-top: 10%; }
   .div-img__pd-tp {
@@ -19,6 +18,12 @@
   width: 100%; }
 
 .indicators {
-  margin-top: 50%; }
+  margin-top: 55%; }
+
+.carousel .indicators .indicator-item {
+  background-color: rgba(16, 0, 0, 0.2); }
+
+.carousel .indicators .indicator-item.active {
+  background-color: rgba(255, 0, 0, 0.6); }
 
 /*# sourceMappingURL=style.css.map */

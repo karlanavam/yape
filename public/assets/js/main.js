@@ -1,19 +1,6 @@
 $('.carousel.carousel-slider').carousel({fullWidth: true});
-/*var cargarPagina = function() {
-    yapeDatos();
-    console.log("hola");
-};
 
-var yapeDatos = function() {
-  var url ='http://localhost:3000/registerNumber';
-  $.getJSON(url, function(response){
-    console.log(response.results)
-  });
-};*/
-
-/*$(document).ready(cargarPagina);*/
-
-/*function getJSON(url){
+function getJSON(url){
     return new Promise(function(resolve, reject){
         var ajax = new XMLHttpRequest();
         ajax.open("POST", url);
@@ -26,5 +13,5 @@ var yapeDatos = function() {
     })
 }
 
-getJSON("http://localhost:3000/registerNumber")
-.then(function(mensaje){ console.log(mensaje)});*/
+getJSON("http://localhost:3000/api/registerNumber")
+.then(function(datos){console.log(datos)});
