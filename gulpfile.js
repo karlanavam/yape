@@ -1,4 +1,4 @@
-//Declarar dependencias
+//Importar dependencias
 const gulp = require('gulp');
 const uglify = require('gulp-uglify');
 const obfuscate = require('gulp-obfuscate');
@@ -8,8 +8,7 @@ const sass = require('gulp-sass');
 const rutas = {
     rutaJS: 'src/assets/js/*.js',
     rutaSCSS: 'src/assets/scss/*.scss',
-    rutaHTML: 'index.html',
-    rutaPantallaDos: 'pantalla-dos.html'
+    rutaHTML: 'index.html'
 };
 
 //Prepara nuestros archivos de desarrollo y los copia a public
