@@ -1,14 +1,14 @@
 .div-img {
   height: 400px !important; }
   .div-img__hija {
-    width: 300px; }
+    width: 100%; }
   .div-img__mg-tp {
     margin-top: 10%; }
   .div-img__pd-tp {
     padding-top: 10%; }
 
 .btn, .btn-large {
-  background-color: gold;
+  background-color: #fbd43b;
   color: white; }
 
 .black-text {
@@ -24,6 +24,32 @@
   background-color: rgba(16, 0, 0, 0.2); }
 
 .carousel .indicators .indicator-item.active {
-  background-color: rgba(255, 0, 0, 0.6); }
+  background-color: #f64552; }
+
+.mg-rg {
+  margin-right: 13%; }
+
+.mg-lf {
+  margin-left: 13%;
+  padding-bottom: 1%;
+  margin-top: 1.5%; }
+
+.pd-lft {
+  padding-left: 3%; }
+
+input#stay_current_portrait.validate {
+  margin: 0; }
+
+.mg-cero {
+  margin: 0; }
+
+.font-s {
+  font-size: .5em; }
+
+.mg-btn-top {
+  margin-top: 15%; }
+
+.amarillo {
+  background-color: #fbd43b; }
 
 /*# sourceMappingURL=style.css.map */

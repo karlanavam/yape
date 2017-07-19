@@ -1,5 +1,20 @@
 $('.carousel.carousel-slider').carousel({fullWidth: true});
 
+$btnContinuarPagDos = $('#btn-continuar-pagDos').attr("disabled","disabled");
+
+$btnContinuarPagDos.click(function() {
+    $inputTelefonoPagDos = $('#telefono-pagDos');
+    
+    if($inputTelefonoPagDos.value == ""){
+        alert("noooo");
+       }
+});
+
+$checkBtn = $('#check-btn');
+$checkBtn.prop("checked", false);
+console.log($checkBtn);
+
+
 function getJSON(url){
     return new Promise(function(resolve, reject){
         var ajax = new XMLHttpRequest();
