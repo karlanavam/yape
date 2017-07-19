@@ -7,7 +7,6 @@ var cargarPagina = function(){
 var validarTelefonoPagDos = function () {
     var $inputTelPagDos = $("#stay_current_portrait").val();
     var longitud = $inputTelPagDos.length;
-    console.log(longitud);
     var $checkBoxPagDos = $("#filled-in-box");
     var $btnContinuarPagDos = $("#btn-continuar-pagDos");
 
