@@ -1,20 +1,21 @@
-$('.carousel.carousel-slider').carousel({fullWidth: true});
+var cargarPagina = function(){
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $("#stay_current_portrait").keyup(validarTelefonoPagDos);
+    $("#filled-in-box").change(validarTelefonoPagDos);
+}
 
-$btnContinuarPagDos = $('#btn-continuar-pagDos').attr("disabled","disabled");
-$btnCrearCuentaPagDCuatro = $('#btn-crearCuenta').attr("disabled","disabled");
+var validarTelefonoPagDos = function () {
+    var $inputTelPagDos = $("#stay_current_portrait").val();
+    var longitud = $inputTelPagDos.length;
+    var $checkBoxPagDos = $("#filled-in-box");
+    var $btnContinuarPagDos = $("#btn-continuar-pagDos");
 
-$btnContinuarPagDos.click(function() {
-    $inputTelefonoPagDos = $('#telefono-pagDos');
-    
-    if($inputTelefonoPagDos.value == ""){
-        alert("noooo");
-       }
-});
-
-$checkBtn = $('#check-btn');
-$checkBtn.prop("checked", false);
-console.log($checkBtn);
-
+    if ( longitud == 10 && $checkBoxPagDos.prop("checked")) {
+        $btnContinuarPagDos.removeClass("disabled");
+    } else {
+        $btnContinuarPagDos.addClass("disabled");
+    }
+}
 
 function getJSON(url){
     return new Promise(function(resolve, reject){
@@ -31,3 +32,6 @@ function getJSON(url){
 
 getJSON("http://localhost:3000/api/registerNumber")
 .then(function(datos){console.log(datos)});
+
+
+$(document).ready(cargarPagina);
