@@ -1,6 +1,7 @@
 $('.carousel.carousel-slider').carousel({fullWidth: true});
 
 $btnContinuarPagDos = $('#btn-continuar-pagDos').attr("disabled","disabled");
+$btnCrearCuentaPagDCuatro = $('#btn-crearCuenta').attr("disabled","disabled");
 
 $btnContinuarPagDos.click(function() {
     $inputTelefonoPagDos = $('#telefono-pagDos');

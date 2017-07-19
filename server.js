@@ -24,12 +24,15 @@ let router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
-  res.sendFile(__dirname+ '/index.html');
 });
 
 app.use('/api',apiUsers(router,db));
 app.use('/static', express.static(path.join(__dirname, 'node_modules')));
 app.use('/static', express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname+ '/index.html');
+});
 
 
 const port = process.env.PORT || 3000;
