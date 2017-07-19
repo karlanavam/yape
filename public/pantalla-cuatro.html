@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yape</title>
+    <link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <section class="container-fluid">
+        <div class="row div-img__mg-tp">
+            <div class="col s4 offset-s4 div-img__pd-tp">
+                <img src="assets/img/icons/lockone.png" alt="lock-one" class="div-img__hija">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s10 offset-s1">
+                <h5 class="center-align"><strong>Crea tu usuario Yape</strong></h5>
+                <p class="center-align">Ingresa un nombre, email y clave de usuario.</p>
+            </div>
+        </div>
+          <div class="row">
+            <form class="col s12">
+                <div class="row mg-cero">
+                    <div class="input-field col s10 offset-s1 mg-cero">
+                    <input id="first_name" type="text" class="validate align-center">
+                    <label for="first_name" class="center-align">
+                        <i class="material-icons mg-rg pd-lft ">perm_identity</i><span>Nombre</span>
+                    </label>
+                    </div>
+                </div>
+                <div class="row mg-cero">
+                    <div class="input-field col s10 offset-s1 mg-cero">
+                        <input id="email" type="email" class="validate">
+                        <label for="email" class="align-center">
+                            <i class="material-icons mg-rg pd-lft ">chat_bubble_outline</i>
+                            <span>correo@ejemplo.com</span>
+                        </label>
+                    </div>
+                </div> 
+                <div class="row mg-cero">
+                    <div class="input-field col s10 offset-s1 mg-cero">
+                        <input id="stay_current_portrait" type="tel" class="validate" id="telefono-pagDos">
+                        <label for="stay_current_portrait ">
+                            <i class="material-icons mg-rg pd-lft ">lock_outline</i><span class="mg-lf-dos mg-lf-i">°°°°</span>
+                        </label>
+                    </div>
+                    <div class="row mg-cero">
+                    <div class="col s8 offset-s2 center-align">
+                    <span class="center-align font-gris"> Cuida esta clave como oro, es tu acceso a Yape </span>
+                    </div>
+                    </div>
+                </div>
+                <div class="row mg-btn-top">
+                    <div class="col s8 offset-s2">
+                        <button class="btn waves-effect waves-light darken-text-2 btn__width center-align" type="submit" name="action" href="pantalla-tres.html" id="btn-crearCuenta">CONTINUAR
+                    </button>
+                    </div>
+                </div>
+
+            </form>
+          </div>
+    </section>    
+    
+    
+    
+    <script src="static/jquery/dist/jquery.min.js"></script>
+    <script src="static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="static/assets/js/main.js"></script>
+</body>
+</html>

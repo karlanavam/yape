@@ -34,6 +34,11 @@
   padding-bottom: 1%;
   margin-top: 1.5%; }
 
+.mg-lf-dos {
+  margin-left: 5%;
+  padding-bottom: 1%;
+  margin-top: 1.5%; }
+
 .pd-lft {
   padding-left: 3%; }
 
@@ -51,5 +56,14 @@ input#stay_current_portrait.validate {
 
 .amarillo {
   background-color: #fbd43b; }
+
+.mg-lf-i {
+  margin-left: 12.5%; }
+
+.display-inline {
+  display: inline; }
+
+.font-gris {
+  color: #8f8f8f; }
 
 /*# sourceMappingURL=style.css.map */
