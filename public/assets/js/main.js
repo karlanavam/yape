@@ -38,11 +38,17 @@ var usarApi = function () {
         "phone": $("#stay_current_portrait").val(),
         "terms": true
     }).then(function(response) {
-                    console.log(response)
-                    console.log("Tu código de validación es: " + response.data.code)
+                    localStorage.setItem("phone", response.data.phone);
+                    localStorage.setItem("terms", response.data.terms);
+                    localStorage.setItem("code", response.data.code);
+                    alerta()
                       }).catch(function(error) {
                         console.log(error);
     });
 };
+
+function alerta(){
+    alert("Tu código de validación es: " + localStorage.getItem("code"));
+}
 
 $(document).ready(cargarPagina);
