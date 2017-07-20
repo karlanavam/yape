@@ -12,7 +12,12 @@ var cargarPagina = function(){
     $("#stay_current_portrait").keyup(validarPagDos);
     $("#filled-in-box").change(validarPagDos);
     $('#btn-continuar-pagDos').click(usarApi);
+    $('#codigo').keyup(validarCodigo);
 }
+
+var telefono = localStorage.getItem("phone");
+var terminos = localStorage.getItem("terms");
+var codigo = localStorage.getItem("code");
 
 var endPoints = {
     urlNumber: 'http://localhost:3000/api/registerNumber',
@@ -41,7 +46,7 @@ var usarApi = function () {
                     localStorage.setItem("phone", response.data.phone);
                     localStorage.setItem("terms", response.data.terms);
                     localStorage.setItem("code", response.data.code);
-                    alerta()
+                    alerta();
                       }).catch(function(error) {
                         console.log(error);
     });
@@ -50,5 +55,19 @@ var usarApi = function () {
 function alerta(){
     alert("Tu código de validación es: " + localStorage.getItem("code"));
 }
+
+var validarCodigo = function() {
+    var $valorCodigo = $('#codigo').val();
+    var codigoGenerado = codigo.length;
+    
+    if ($valorCodigo.length == codigoGenerado){
+            if ($valorCodigo == codigo){
+                    location.href = "pantalla-cuatro.html";
+                }  else {
+            alert("error");
+        };
+    };
+};
+
 
 $(document).ready(cargarPagina);
