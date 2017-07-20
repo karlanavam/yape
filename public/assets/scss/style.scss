@@ -1,3 +1,14 @@
+$morado-light: #451e36;
+$morado-dark: #38052a;
+$amarillo: #fbd43b;
+$rojo-bullet: #f64552;
+$gris-bullet: #f8f8f8;
+$gris-rk: #212121;
+$gris-letra-soft: #8f8f8f;
+$turquesa-terminos-condiciones: #00c3a3;
+$morado-Entradad-numeros: #49233b;
+
+
 .div-img {
     height: 400px !important;
     &__hija {
@@ -14,7 +25,7 @@
 }
 
 .btn, .btn-large {
-    background-color: #fbd43b;
+    background-color: $amarillo;
     color: white;
 }
 
@@ -37,7 +48,7 @@
 }
 
 .carousel .indicators .indicator-item.active {
-    background-color: #f64552; 
+    background-color: $rojo-bullet; 
 }
 
 .mg-rg{
@@ -80,7 +91,7 @@ input#stay_current_portrait.validate{
 }
 
 .amarillo{
-    background-color: #fbd43b;
+    background-color: $amarillo;
 }
 
 .mg-lf-i{
@@ -92,12 +103,9 @@ input#stay_current_portrait.validate{
 }
 
 .font-gris{
-    color: #8f8f8f;
+    color: $gris-letra-soft;
 }
 
-.font-weight{
-    font-weight: 500;
-}
 
 /* PANTALLA SEIS */
 
@@ -131,3 +139,84 @@ div#fecha-vencimiento{
 
 
 /* PANTALLA SIETE */
+section.morado-soft{
+    background-color: $morado-light;
+    height: 39vh;
+    div{
+        div{
+            img{
+                width: 100%;
+            }
+            h5{
+                margin: 0;
+            }
+        }
+    }
+}
+
+section.morado-soft{
+    div#configuraciones{
+        div{
+            img{
+                width: 50%;
+                margin: 40% 0 0 30%;
+            }
+        }
+    }
+}
+
+div#mostrar-saldo{
+    margin-top: -3%;
+    padding-left: 8%;
+    a{
+        img{
+            width: 15%;
+        }
+    }
+    
+}
+
+section.morado-dark{
+    background-color: $morado-dark;
+    height: 60vh;
+    div{
+        padding: 2% 0 2% 2%;
+        div{
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
+
+div#dark-uno{
+    div{
+        img{
+            width: 75%;
+            margin-left: 15%;
+        }
+    }
+    div{
+        div.row{
+            p{
+                color: white;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+div#botones{
+    margin-top: 20%;
+    div{
+        div{
+            img{
+                width: 40%;
+            }
+            p{
+                color: white;
+            }
+        }
+    }
+}
