@@ -69,9 +69,6 @@ input#stay_current_portrait.validate {
 .font-gris {
   color: #8f8f8f; }
 
-.font-weight {
-  font-weight: 500; }
-
 /* PANTALLA SEIS */
 div#pantalla-seis-input-imgs label img {
   width: 10%; }
@@ -89,5 +86,45 @@ div#fecha-vencimiento div {
     padding: 9% 0 0 0; }
 
 /* PANTALLA SIETE */
+section.morado-soft {
+  background-color: #451e36;
+  height: 39vh; }
+  section.morado-soft div div img {
+    width: 100%; }
+  section.morado-soft div div h5 {
+    margin: 0; }
+
+section.morado-soft div#configuraciones div img {
+  width: 50%;
+  margin: 40% 0 0 30%; }
+
+div#mostrar-saldo {
+  margin-top: -3%;
+  padding-left: 8%; }
+  div#mostrar-saldo a img {
+    width: 15%; }
+
+section.morado-dark {
+  background-color: #38052a;
+  height: 60vh; }
+  section.morado-dark div {
+    padding: 2% 0 2% 2%; }
+    section.morado-dark div div img {
+      width: 50%; }
+
+div#dark-uno div img {
+  width: 75%;
+  margin-left: 15%; }
+div#dark-uno div div.row p {
+  color: white;
+  padding: 0;
+  margin: 0; }
+
+div#botones {
+  margin-top: 20%; }
+  div#botones div div img {
+    width: 40%; }
+  div#botones div div p {
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */
