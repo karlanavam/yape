@@ -1,3 +1,4 @@
+/* INDEX */
 .div-img {
   height: 400px !important; }
   .div-img__hija {
@@ -42,6 +43,11 @@
 .pd-lft {
   padding-left: 3%; }
 
+/* PANTALLA-DOS A CINCO */
+[type="checkbox"] + label {
+  margin-left: 10%;
+  margin-top: 7%; }
+
 input#stay_current_portrait.validate {
   margin: 0; }
 
@@ -55,7 +61,7 @@ input#stay_current_portrait.validate {
   margin-top: 15%; }
 
 .mg-btn-topCinco {
-  margin-top: 50%; }
+  margin-top: 40%; }
 
 .amarillo {
   background-color: #fbd43b; }
@@ -75,7 +81,7 @@ div#pantalla-seis-input-imgs label img {
 div#pantalla-seis-input-imgs span img {
   width: 15%;
   margin-right: 7%;
-  margin-top: 4%; }
+  margin-top: 5%; }
 
 div#fecha-vencimiento div {
   padding: 0;
@@ -95,7 +101,7 @@ section.morado-soft {
     margin: 0; }
 
 section.morado-soft div#configuraciones div img {
-  width: 50%;
+  width: 40%;
   margin: 40% 0 0 30%; }
 
 div#mostrar-saldo {
@@ -110,7 +116,7 @@ section.morado-dark {
   section.morado-dark div {
     padding: 2% 0 2% 2%; }
     section.morado-dark div div img {
-      width: 50%; }
+      width: 40%; }
 
 div#dark-uno div img {
   width: 75%;
@@ -129,7 +135,7 @@ div#botones {
 
 /* PANTALLA SEIS-DOS */
 #input-tarjeta label img {
-  width: 7%; }
+  width: 5%; }
 
 #divBtn-pantalla-seisDos {
   margin-top: 40%; }
