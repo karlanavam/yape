@@ -76,6 +76,8 @@ input#stay_current_portrait.validate {
   color: #8f8f8f; }
 
 /* PANTALLA SEIS */
+div#pantalla-seis-input-imgs input {
+  margin: 0; }
 div#pantalla-seis-input-imgs label img {
   width: 10%; }
 div#pantalla-seis-input-imgs span img {
@@ -85,11 +87,14 @@ div#pantalla-seis-input-imgs span img {
 
 div#fecha-vencimiento div {
   padding: 0;
-  margin-bottom: 15%; }
+  margin-bottom: 5%; }
   div#fecha-vencimiento div span {
     margin: 0;
     font-size: 1.9vh;
-    padding: 9% 0 0 0; }
+    padding: 5% 0 0 0; }
+
+.marg-top-u {
+  margin-top: 40%; }
 
 /* PANTALLA SIETE */
 section.morado-soft {
