@@ -3,10 +3,11 @@ var cargarPagina = function(){
     
 };
 
+// Escribe el teléfono en el HTML
 var pedirApi = function() {
     $('#espacioCodigo').html(localStorage.getItem("phone"));
-    console.log(localStorage.getItem("code"));
-    setInterval(function(){generarCodigo();}, 10000);
+    // Llama a la función de generar código cada 21 segundos
+    setInterval(function(){generarCodigo();}, 21000);
 };
 
 $(document).ready(cargarPagina);
