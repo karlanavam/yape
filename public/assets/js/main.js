@@ -69,5 +69,17 @@ var validarCodigo = function() {
     };
 };
 
+var generarCodigo = function () {
+    $.post(endPoints.urlCode, {
+        "phone": localStorage.getItem("phone"),
+    }).then(function(response) {
+                    console.log(response)
+                    localStorage.setItem('code', response.data);
+                    console.log(response.data);
+                    alert(response.data);
+                    }).catch(function(error) {
+                        console.log(error);
+    });
+};
 
 $(document).ready(cargarPagina);
