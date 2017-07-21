@@ -1,26 +1,18 @@
-$morado-light: #451e36;
-$morado-dark: #38052a;
-$amarillo: #fbd43b;
-$rojo-bullet: #f64552;
-$gris-bullet: #f8f8f8;
-$gris-rk: #212121;
-$gris-letra-soft: #8f8f8f;
-$turquesa-terminos-condiciones: #00c3a3;
-$morado-Entradad-numeros: #49233b;
+@import "_variables";
 
-
+/* INDEX */
 .div-img {
     height: 400px !important;
     &__hija {
-        width: 100%;
+        width: $cien-porciento;
     }
     
     &__mg-tp {
-        margin-top: 10%;
+        margin-top: $diez-pociento;
     }
     
     &__pd-tp {
-        padding-top: 10%;
+        padding-top: $diez-pociento;
     }
 }
 
@@ -35,7 +27,7 @@ $morado-Entradad-numeros: #49233b;
 
 .btn{
     &__width{
-        width: 100%;
+        width: $cien-porciento;
     }
 }
 
@@ -52,30 +44,38 @@ $morado-Entradad-numeros: #49233b;
 }
 
 .mg-rg{
-    margin-right: 13%;
+    margin-right: $margin-trece;
 }
 
 .mg-lf{
-    margin-left: 13%;
-    padding-bottom: 1%;
+    margin-left: $margin-trece;
+    padding-bottom: $uno-porciento;
     margin-top: 1.5%;
 }
 
 .mg-lf-dos{
-    margin-left: 5%;
-    padding-bottom: 1%;
+    margin-left: $cinco-porciento;
+    padding-bottom: $uno-porciento;
     margin-top: 1.5%;
 }
 
 .pd-lft{
     padding-left: 3%;
 }
+
+/* PANTALLA-DOS A CINCO */
+
+[type="checkbox"]+label {
+    margin-left: $diez-pociento;
+    margin-top: $siete-porciento;
+}
+
 input#stay_current_portrait.validate{
-    margin: 0;
+    margin: $cero;
 }
 
 .mg-cero{
-    margin: 0;
+    margin: $cero;
 }
 
 .font-s{
@@ -83,11 +83,11 @@ input#stay_current_portrait.validate{
 }
 
 .mg-btn-top{
-    margin-top: 15%;
+    margin-top: $quince-pociento;
 }
 
 .mg-btn-topCinco{
-    margin-top: 50%;
+    margin-top: $cincuenta-pociento;
 }
 
 .amarillo{
@@ -112,26 +112,26 @@ input#stay_current_portrait.validate{
 div#pantalla-seis-input-imgs{
     label{
         img{
-            width: 10%;
+            width: $diez-pociento;
         }
     }
     span{
         img{
-            width: 15%;
-            margin-right: 7%;
-            margin-top: 4%;
+            width: $quince-pociento;
+            margin-right: $siete-porciento;
+            margin-top: $cinco-porciento;
         }
     }
 }
 
 div#fecha-vencimiento{
     div{
-        padding: 0;
-        margin-bottom: 15%;
+        padding: $cero;
+        margin-bottom: $quince-pociento;
         span{
-            margin: 0;
+            margin: $cero;
             font-size: 1.9vh;
-            padding: 9% 0 0 0;
+            padding: 9% $cero $cero $cero;
             
         }
     }
@@ -145,10 +145,10 @@ section.morado-soft{
     div{
         div{
             img{
-                width: 100%;
+                width: $cien-porciento;
             }
             h5{
-                margin: 0;
+                margin: $cero;
             }
         }
     }
@@ -158,8 +158,8 @@ section.morado-soft{
     div#configuraciones{
         div{
             img{
-                width: 50%;
-                margin: 40% 0 0 30%;
+                width: $cincuenta-pociento;
+                margin: $cuarenta-pociento $cero $cero 30%;
             }
         }
     }
@@ -170,7 +170,7 @@ div#mostrar-saldo{
     padding-left: 8%;
     a{
         img{
-            width: 15%;
+            width: $quince-pociento;
         }
     }
     
@@ -180,10 +180,10 @@ section.morado-dark{
     background-color: $morado-dark;
     height: 60vh;
     div{
-        padding: 2% 0 2% 2%;
+        padding: 2% $cero 2% 2%;
         div{
             img{
-                width: 50%;
+                width: $cincuenta-pociento;
             }
         }
     }
@@ -193,26 +193,26 @@ div#dark-uno{
     div{
         img{
             width: 75%;
-            margin-left: 15%;
+            margin-left: $quince-pociento;
         }
     }
     div{
         div.row{
             p{
                 color: white;
-                padding: 0;
-                margin: 0;
+                padding: $cero;
+                margin: $cero;
             }
         }
     }
 }
 
 div#botones{
-    margin-top: 20%;
+    margin-top: $veinte-pociento;
     div{
         div{
             img{
-                width: 40%;
+                width: $cuarenta-pociento;
             }
             p{
                 color: white;
@@ -226,14 +226,14 @@ div#botones{
 #input-tarjeta{
     label{
         img{
-            width: 7%;
+            width: $cinco-porciento;
         }
     }
    
 }
 
 #divBtn-pantalla-seisDos{
-    margin-top: 40%;    
+    margin-top: $cuarenta-pociento;    
 }
 
 
