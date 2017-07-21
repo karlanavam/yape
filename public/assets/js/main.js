@@ -16,7 +16,7 @@ var cargarPagina = function(){
     $('#first_name').keyup(validarPagCuatro);
     $('#email').keyup(validarPagCuatro);
     $('#contrasena').keyup(validarPagCuatro);
-
+    $('#btnCinco').click(usarApiUser);
 }
 
 // Declarar variables que jalan valores de localStorage 
@@ -110,7 +110,27 @@ var validarPagCuatro = function () {
     }
 };
 
-// Validar inputs de pantalla-seis.html
+
+// Request a API
+var usarApiUser = function () {
+    
+    var $inputNombre2 = $("#first_name").val();
+    var $inputMail2 = $("#email").val();
+    var $inputContrasena2 = $("#contrasena").val();
+    console.log(localStorage.getItem("phone"));
+    
+    $.post(endPoints.urlUser, {
+        "phone": telefono,
+        "name": $inputNombre2,
+        "email": $inputMail2,
+        "password": $inputContrasena2
+    }).then(function(response) {
+                    console.log(response);
+                      }).catch(function(error) {
+                        console.log(error);
+    });
+};
+
 
 
 
