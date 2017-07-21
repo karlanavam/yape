@@ -127,4 +127,11 @@ div#botones {
   div#botones div div p {
     color: white; }
 
+/* PANTALLA SEIS-DOS */
+#input-tarjeta label img {
+  width: 7%; }
+
+#divBtn-pantalla-seisDos {
+  margin-top: 40%; }
+
 /*# sourceMappingURL=style.css.map */
