@@ -7,7 +7,7 @@ var cargarPagina = function(){
     $('#first_name').keyup(validarPagCuatro);
     $('#email').keyup(validarPagCuatro);
     $('#contrasena').keyup(validarPagCuatro); $('#btnCinco').click(usarApiUser);
-    $('#continuar-tarjeta').click(usarApiTarjeta);
+    $('#tarjeta-numero').keyup(validarPagSeis); 
 }
 
 // Declarar variables que jalan valores de localStorage 
@@ -123,20 +123,19 @@ var usarApiUser = function () {
     });
 };
 
-
-// Request a API crear usuario
-var usarApiTarjeta = function () {
+// Validar input tareja 
+var validarPagSeis = function(){
+    var $numeroTarjeta = $('#tarjeta-numero').val();
+    var $btnTarjeta = $('#btn-continuar-tarjeta');
     
-    $.post(endPoints.urlCard {
-        "userId": telefono,
-    }).then(function(response) {
-                    console.log(response);
-                      }).catch(function(error) {
-                        console.log(error);
-    });
+    console.log("fuera");
+    if($numeroTarjeta.length == 16) {
+        $btnTarjeta.removeClass("disabled");
+        console.log("entra");
+    } else {
+        $btnTarjeta.addClass("disabled");     
+    }
 };
-
-
 
 
 
