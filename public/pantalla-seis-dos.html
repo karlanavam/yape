@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yape</title>
+     <link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
+     <link rel="stylesheet" href="static/assets/css/style.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <section class="container-fluid">
+        <div class="row div-img__mg-tp">
+            <div class="col s4 offset-s4 div-img__pd-tp">
+                <img src="assets/img/icons/bcp-logo.png" alt="phone" class="div-img__hija">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s10 offset-s1">
+                <h5 class="center-align"><strong>Ingresa la clave de tu tarjeta</strong></h5>
+                <p class="center-align">Tarjeta <b>****</b><b id="espacioTarjeta"></b></p>
+            </div>
+        </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row mg-cero">
+                <div class="input-field col s10 offset-s1" id="input-tarjeta">
+                    <input id="claveTarjeta" type="password" min="1" max="16" class="validate">
+                    <label for="stay_current_portrait">
+                        <img src="assets/img/icons/lock.png" alt="credit card">
+                    </label>
+                </div>
+              </div>
+                <div class="col s8 offset-s2" id="divBtn-pantalla-seisDos">
+                    <a class="btn waves-effect waves-light darken-text-2 btn__width center-align disabled" type="submit" name="action"  href="pantalla-tres.html" id="btnContinuar-pantallaSeisDos">
+                            CONTINUAR
+                        </a>
+                </div>
+
+            </form>
+          </div>
+
+    </section>    
+    
+    
+    
+    <script src="static/jquery/dist/jquery.min.js"></script>
+    <script src="static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="static/assets/js/main.js"></script>
+</body>
+</html>
