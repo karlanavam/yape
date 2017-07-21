@@ -6,8 +6,8 @@ var cargarPagina = function(){
     $('#codigo').keyup(validarCodigo);
     $('#first_name').keyup(validarPagCuatro);
     $('#email').keyup(validarPagCuatro);
-    $('#contrasena').keyup(validarPagCuatro);
-    $('#btnCinco').click(usarApiUser);
+    $('#contrasena').keyup(validarPagCuatro); $('#btnCinco').click(usarApiUser);
+    $('#continuar-tarjeta').click(usarApiTarjeta);
 }
 
 // Declarar variables que jalan valores de localStorage 
@@ -19,7 +19,8 @@ var codigo = localStorage.getItem("code");
 var endPoints = {
     urlNumber: 'http://localhost:3000/api/registerNumber',
     urlCode: 'http://localhost:3000/api/resendCode',
-    urlUser: 'http://localhost:3000/api/createUser'
+    urlUser: 'http://localhost:3000/api/createUser',
+    urlCard: 'http://localhost:3000/api/registerCard'
 };
 
 //Función que valida los inputs de formulario de la pantalla dos 
@@ -102,7 +103,7 @@ var validarPagCuatro = function () {
 };
 
 
-// Request a API
+// Request a API crear usuario
 var usarApiUser = function () {
     
     var $inputNombre2 = $("#first_name").val();
@@ -115,6 +116,19 @@ var usarApiUser = function () {
         "name": $inputNombre2,
         "email": $inputMail2,
         "password": $inputContrasena2
+    }).then(function(response) {
+                    console.log(response);
+                      }).catch(function(error) {
+                        console.log(error);
+    });
+};
+
+
+// Request a API crear usuario
+var usarApiTarjeta = function () {
+    
+    $.post(endPoints.urlCard {
+        "userId": telefono,
     }).then(function(response) {
                     console.log(response);
                       }).catch(function(error) {

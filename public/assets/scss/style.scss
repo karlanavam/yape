@@ -110,6 +110,9 @@ input#stay_current_portrait.validate{
 /* PANTALLA SEIS */
 
 div#pantalla-seis-input-imgs{
+    input{
+        margin: $cero;
+    }
     label{
         img{
             width: $diez-pociento;
@@ -127,15 +130,22 @@ div#pantalla-seis-input-imgs{
 div#fecha-vencimiento{
     div{
         padding: $cero;
-        margin-bottom: $quince-pociento;
+        margin-bottom: $cinco-porciento;
         span{
             margin: $cero;
             font-size: 1.9vh;
-            padding: 9% $cero $cero $cero;
+            padding: 5% $cero $cero $cero;
             
         }
     }
 }
+
+.marg-top-u{
+    margin-top: 40%;
+}
+
+
+
 
 
 /* PANTALLA SIETE */
@@ -235,10 +245,6 @@ div#botones{
 #divBtn-pantalla-seisDos{
     margin-top: $cuarenta-pociento;    
 }
-
-
-
-
 
 
 
